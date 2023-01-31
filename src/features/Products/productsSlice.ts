@@ -85,7 +85,7 @@ export const selectFilteredProducts = (
 ) => {
   const products = selectProducts(state);
 
-  if (!query) {
+  if (query === null) {
     return products;
   }
 
