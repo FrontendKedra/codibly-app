@@ -10,7 +10,7 @@ function App() {
           <Route path="/main">
             <ViewRenderer />
           </Route>
-          <Route path="/">
+          <Route path="">
             <Redirect to="/main" />
           </Route>
         </Switch>
