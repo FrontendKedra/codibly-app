@@ -4,7 +4,7 @@ import { ViewRenderer } from "./features/ViewRenderer";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <AppContainer>
         <Switch>
           <Route path="/main">
