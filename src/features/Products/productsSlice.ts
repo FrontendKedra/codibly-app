@@ -1,20 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { Data } from "../../common/interfaces/interface";
 import { RootState } from "../../store";
 
-interface Item {
-  color: string;
-  id: number;
-  name: string;
-  pantone_value: string;
-  year: number;
-}
 interface InitialState {
   products: [];
   page: number;
   totalPages: number;
   status: string;
   modal: boolean;
-  modalItems: Item[];
+  modalItems: Data[];
 }
 
 const initialState: InitialState = {

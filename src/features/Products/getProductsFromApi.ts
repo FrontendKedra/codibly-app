@@ -1,10 +1,7 @@
+import { Data } from "../../common/interfaces/interface";
+
 export interface Product {
-  id: number;
-  name: string;
-  year: number;
-  color: string;
-  pantone_value: string;
-  data: [];
+  data: Data;
   page: number;
   total_pages: number;
 }
