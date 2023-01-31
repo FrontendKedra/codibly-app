@@ -1,18 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
 
+interface Item {
+  color: string;
+  id: number;
+  name: string;
+  pantone_value: string;
+  year: number;
+}
 interface InitialState {
-  apiProducts: any[];
   products: [];
   page: number;
   totalPages: number;
   status: string;
   modal: boolean;
-  modalItems: any[];
+  modalItems: Item[];
 }
 
 const initialState: InitialState = {
-  apiProducts: [],
   products: [],
   page: 0,
   totalPages: 0,
@@ -31,7 +36,6 @@ const productsSlice = createSlice({
     fetchProductsSuccess: (state, { payload: apiProducts }) => {
       state.status = "success";
       state.products = apiProducts.data;
-      state.apiProducts = [apiProducts];
       state.page = apiProducts.page;
       state.totalPages = apiProducts.total_pages;
     },
@@ -70,9 +74,6 @@ export const selectProductsStatus = (state: RootState) =>
 
 export const selectProducts = (state: RootState) =>
   selectProductsState(state).products;
-
-export const selectApiProducts = (state: RootState) =>
-  selectProductsState(state).apiProducts;
 
 export const selectPage = (state: RootState) => selectProductsState(state).page;
 
