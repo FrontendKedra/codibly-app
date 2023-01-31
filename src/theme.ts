@@ -1,6 +1,6 @@
 export interface ThemeFields {
   [index: string]: string;
-};
+}
 
 export interface Theme {
   color: ThemeFields;

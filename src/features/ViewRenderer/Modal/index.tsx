@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectModalItems, toggleModal } from "../../Products/productsSlice";
 import { ModalContainer, Item, Button } from "./styled";
-import React from 'react';
+import React from "react";
 
 export const Modal: React.FC = () => {
   const modalItems = useSelector(selectModalItems);

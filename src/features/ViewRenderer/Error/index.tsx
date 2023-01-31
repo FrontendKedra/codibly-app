@@ -1,6 +1,6 @@
 import { MainPageLink } from "../../../common/CommonStyles/styled";
 import { ErrorContainer, Text } from "./styled";
-import React from 'react';
+import React from "react";
 
 export const Error: React.FC = () => (
   <ErrorContainer>

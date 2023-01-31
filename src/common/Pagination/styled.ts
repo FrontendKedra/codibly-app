@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as PreviousArrow } from "./images/previousArrow.svg"
+import { ReactComponent as PreviousArrow } from "./images/previousArrow.svg";
 import { ReactComponent as NextArrow } from "./images/nextArrow.svg";
 
 export const Container = styled.div`
@@ -34,9 +34,9 @@ export const Button = styled.button`
     background-color: ${({ theme }) => theme.color.gray};
     cursor: not-allowed;
 
-    &:hover {
-      background-color: ${({ theme }) => theme.color.gray};
-    }
+      &:hover {
+        background-color: ${({ theme }) => theme.color.gray};
+      }
   }
 `;
 

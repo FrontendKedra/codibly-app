@@ -1,7 +1,7 @@
 import { useQueryParameter } from "../../useQueryParameter";
 import { useReplaceQueryParameter } from "../../useReplaceQueryParameter";
 import { Header, IdInput, InputContainer } from "./styled";
-import React from 'react';
+import React from "react";
 
 export const Input = () => {
   const replaceQueryParameter = useReplaceQueryParameter();

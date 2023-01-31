@@ -12,7 +12,7 @@ import { NoResult } from "./NoResult";
 import { useEffect } from "react";
 import { Table } from "./Table";
 import { RootState } from "../../store";
-import React from 'react';
+import React from "react";
 
 export const ViewRenderer: React.FC = () => {
   const dispatch = useDispatch();

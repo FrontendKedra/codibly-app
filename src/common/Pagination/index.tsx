@@ -7,7 +7,7 @@ import {
 } from "../../features/Products/productsSlice";
 import { useReplaceQueryParameter } from "../../useReplaceQueryParameter";
 import { ArrowNext, ArrowPrevious, Button, Container } from "./styled";
-import React from 'react';
+import React from "react";
 
 export const Pagination: React.FC = () => {
   const dispatch = useDispatch();
