@@ -8,6 +8,6 @@ export const Error: React.FC = () => (
       Something went wrong <br /> Please check your network connection and try
       again
     </Text>
-    <MainPageLink href="/">Go back to the main page</MainPageLink>
+    <MainPageLink to="/">Go back to the main page</MainPageLink>
   </ErrorContainer>
 );

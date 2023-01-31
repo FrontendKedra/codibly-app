@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const MainPageLink = styled.a`
+export const MainPageLink = styled(Link)`
   text-decoration: none;
   border: 1px solid blue;
   width: max-content;

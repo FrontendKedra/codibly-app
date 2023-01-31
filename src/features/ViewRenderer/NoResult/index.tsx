@@ -10,6 +10,6 @@ export const NoResult: React.FC = () => (
       No items with chosen numbers found <br /> Please choose a different id, or
       go back to the main page
     </NoItemsText>
-    <MainPageLink href="/">Go back to the main page</MainPageLink>
+    <MainPageLink to="/">Go back to the main page</MainPageLink>
   </>
 );
