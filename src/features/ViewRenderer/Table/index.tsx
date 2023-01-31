@@ -7,7 +7,7 @@ import {
   selectFilteredProducts,
   setModalItems,
   toggleModal,
-} from "../../Products/productsSlice";
+} from "../../apiProducts/productsSlice";
 import {
   Cell,
   RowTitle,

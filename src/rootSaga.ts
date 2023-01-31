@@ -1,5 +1,5 @@
 import { all } from "redux-saga/effects";
-import { watchFetchProducts } from "./features/Products/productsSaga";
+import { watchFetchProducts } from "./features/apiProducts/productsSaga";
 
 export function* rootSaga() {
     yield all([

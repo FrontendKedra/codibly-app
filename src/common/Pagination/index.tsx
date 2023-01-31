@@ -4,7 +4,7 @@ import {
   selectTotalPages,
   setNextPage,
   setPreviousPage,
-} from "../../features/Products/productsSlice";
+} from "../../features/apiProducts/productsSlice";
 import { useReplaceQueryParameter } from "../../useReplaceQueryParameter";
 import { ArrowNext, ArrowPrevious, Button, Container } from "./styled";
 import React from "react";

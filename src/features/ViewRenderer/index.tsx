@@ -7,7 +7,7 @@ import {
   selectFilteredProducts,
   selectModal,
   selectProductsStatus,
-} from "../Products/productsSlice";
+} from "../apiProducts/productsSlice";
 import { NoResult } from "./NoResult";
 import { useEffect } from "react";
 import { Table } from "./Table";

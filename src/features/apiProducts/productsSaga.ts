@@ -1,6 +1,6 @@
 import { call, put, takeLatest } from "redux-saga/effects";
+import { apiEndPoint, perPage } from "./apiValue";
 import { getProductsFromApi, Product } from "./getProductsFromApi";
-import { apiEndPoint, perPage } from "../../apiValue";
 import {
   fetchProducts,
   fetchProductsError,
