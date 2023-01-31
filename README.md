@@ -8,6 +8,10 @@ Created this application as part of the hiring request on Codibly's site. It's w
 
 https://frontendkedra.github.io/codibly-app/
 
+## Preview
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/109352604/215827265-09fdee44-9f1b-4ab2-8314-ae6597c5c056.gif)
+
 ## Technologies used
 
 - React
@@ -21,10 +25,6 @@ https://frontendkedra.github.io/codibly-app/
 - CSS Flexbox/ Grid
 - Data imported from API - using fetch
 - Error handling
-
-## Preview
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/109352604/215827265-09fdee44-9f1b-4ab2-8314-ae6597c5c056.gif)
 
 ## Getting Started with Create React App
 
