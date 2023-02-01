@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     *, ::after, ::before {
         box-sizing: inherit;
     }
+    
     body {
         background-color: ${({ theme }) => theme.color.alabaster}
     }
