@@ -2,7 +2,7 @@ import { useHistory, useLocation } from "react-router-dom";
 
 interface Props {
   key: string;
-  value: any;
+  value: string | number;
 }
 
 export const useReplaceQueryParameter = () => {
@@ -14,7 +14,7 @@ export const useReplaceQueryParameter = () => {
     if (!value) {
       searchParams.delete(key);
     } else {
-      searchParams.set(key, value);
+      searchParams.set(key, value.toString());
     }
     history.push(`${location.pathname}?${searchParams.toString()}`);
   };
