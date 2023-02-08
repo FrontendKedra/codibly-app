@@ -11,7 +11,7 @@ export const useReplaceQueryParameter = () => {
 
   return ({ key, value }: Props) => {
     const searchParams = new URLSearchParams(location.search);
-    if (!value) {
+    if (!value || !key) {
       searchParams.delete(key);
     } else {
       searchParams.set(key, value.toString());
