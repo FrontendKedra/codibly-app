@@ -2,7 +2,7 @@
 
 ## Description
 
-Created this application as part of the hiring request on Codibly's site. It's working just like defined on site.
+Created this application as part of the hiring request on Codibly's site. It's working just like defined on job offer's site.
 
 ## Demo 
 
