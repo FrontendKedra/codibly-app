@@ -1,15 +1,15 @@
 import { useHistory, useLocation } from "react-router-dom";
 
-interface Props {
+interface Props<ItemType> {
   key: string;
-  value: string | number;
+  value: ItemType;
 }
 
 export const useReplaceQueryParameter = () => {
   const history = useHistory();
   const location = useLocation();
 
-  return ({ key, value }: Props) => {
+  return <ItemType>({ key, value }: Props<ItemType>) => {
     const searchParams = new URLSearchParams(location.search);
     if (!value || !key) {
       searchParams.delete(key);
