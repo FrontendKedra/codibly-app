@@ -18,7 +18,7 @@ import {
 } from "./styled";
 import React from "react";
 
-export const Table: React.FC = () => {
+export const Table = () => {
   const dispatch = useDispatch();
   const id = useQueryParameter("id");
   const products = useSelector((state: RootState) =>

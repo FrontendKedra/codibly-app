@@ -9,7 +9,7 @@ import { useReplaceQueryParameter } from "../../useReplaceQueryParameter";
 import { ArrowNext, ArrowPrevious, Button, Container } from "./styled";
 import React from "react";
 
-export const Pagination: React.FC = () => {
+export const Pagination = () => {
   const dispatch = useDispatch();
   const page = useSelector(selectPage);
   const totalPages = useSelector(selectTotalPages);

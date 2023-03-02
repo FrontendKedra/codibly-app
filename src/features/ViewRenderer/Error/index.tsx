@@ -2,7 +2,7 @@ import { MainPageLink } from "../../../common/CommonStyles/styled";
 import { ErrorContainer, Text } from "./styled";
 import React from "react";
 
-export const Error: React.FC = () => (
+export const Error = () => (
   <ErrorContainer>
     <Text>
       Something went wrong <br /> Please check your network connection and try

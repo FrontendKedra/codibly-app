@@ -3,7 +3,7 @@ import { Input } from "../../../common/Input";
 import { NoItemsText } from "./styled";
 import React from "react";
 
-export const NoResult: React.FC = () => (
+export const NoResult = () => (
   <>
     <Input />
     <NoItemsText>

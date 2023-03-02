@@ -8,7 +8,7 @@ interface InitialState {
   totalPages: number;
   status: string;
   modal: boolean;
-  modalItems: Data[];
+  modalItems: Array<Data>;
 }
 
 const initialState: InitialState = {

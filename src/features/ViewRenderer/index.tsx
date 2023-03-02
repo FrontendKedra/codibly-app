@@ -14,7 +14,7 @@ import { Table } from "./Table";
 import { RootState } from "../../store";
 import React from "react";
 
-export const ViewRenderer: React.FC = () => {
+export const ViewRenderer = () => {
   const dispatch = useDispatch();
   const page = useQueryParameter("page");
   const id = useQueryParameter("id");

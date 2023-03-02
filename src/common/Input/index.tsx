@@ -3,7 +3,7 @@ import { useReplaceQueryParameter } from "../../useReplaceQueryParameter";
 import { Header, IdInput, InputContainer } from "./styled";
 import React, { useEffect, useRef } from "react";
 
-export const Input: React.FC = () => {
+export const Input = () => {
   const replaceQueryParameter = useReplaceQueryParameter();
   const id = useQueryParameter("id");
 

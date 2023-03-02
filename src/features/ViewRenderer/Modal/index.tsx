@@ -3,7 +3,7 @@ import { selectModalItems, toggleModal } from "../../apiProducts/productsSlice";
 import { ModalContainer, Item, Button } from "./styled";
 import React from "react";
 
-export const Modal: React.FC = () => {
+export const Modal = () => {
   const modalItems = useSelector(selectModalItems);
   const dispatch = useDispatch();
 
