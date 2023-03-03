@@ -1,7 +1,6 @@
 import { MainPageLink } from "../../../common/CommonStyles/styled";
 import { Input } from "../../../common/Input";
 import { NoItemsText } from "./styled";
-import React from "react";
 
 export const NoResult = () => (
   <>

@@ -16,7 +16,6 @@ import {
   TableRow,
   TableTitle,
 } from "./styled";
-import React from "react";
 
 export const Table = () => {
   const dispatch = useDispatch();
