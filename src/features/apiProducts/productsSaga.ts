@@ -1,6 +1,7 @@
 import { call, put, takeLatest } from "redux-saga/effects";
+import { ApiResponse } from "../../common/interfaces/interface";
 import { apiEndPoint, perPage } from "./apiValue";
-import { getProductsFromApi, Product } from "./getProductsFromApi";
+import { getProductsFromApi } from "./getProductsFromApi";
 import {
   fetchProducts,
   fetchProductsError,
@@ -18,7 +19,7 @@ function* fetchProductsHandler({ payload: page }: Payload) {
       : `${apiEndPoint}${perPage}&page=${page}`;
 
   try {
-    const products: Product = yield call(getProductsFromApi, path);
+    const products: ApiResponse = yield call(getProductsFromApi, path);
     yield put(fetchProductsSuccess(products));
   } catch (error) {
     yield put(fetchProductsError());
