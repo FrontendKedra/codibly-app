@@ -1,10 +1,4 @@
-import { Data } from "../../common/interfaces/interface";
-
-export interface Product {
-  data: Data;
-  page: number;
-  total_pages: number;
-}
+import { ApiResponse } from "../../common/interfaces/interface";
 
 export const getProductsFromApi = async (url: string) => {
   const response = await fetch(url);
@@ -12,5 +6,5 @@ export const getProductsFromApi = async (url: string) => {
     throw new Error(response.statusText);
   }
 
-  return (await response.json()) as Promise<Product[]>;
+  return (await response.json()) as Promise<ApiResponse[]>;
 };
